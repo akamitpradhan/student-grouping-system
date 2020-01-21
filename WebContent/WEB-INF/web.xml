@@ -1,0 +1,41 @@
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+<servlet>
+	<servlet-name>abc</servlet-name>
+	<servlet-class>com.telusko.AddServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>abc</servlet-name>
+	<url-pattern>/validate</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>save</servlet-name>
+	<servlet-class>com.telusko.saveServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>save</servlet-name>
+	<url-pattern>/save</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>group</servlet-name>
+	<servlet-class>com.telusko.groupServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>group</servlet-name>
+	<url-pattern>/group</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>showStudents</servlet-name>
+	<servlet-class>com.telusko.showServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>showStudents</servlet-name>
+	<url-pattern>/show</url-pattern>
+</servlet-mapping>
+</web-app>
